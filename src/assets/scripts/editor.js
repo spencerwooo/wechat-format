@@ -14,22 +14,24 @@ var app = new Vue({
       currentEditorTheme: 'base16-light',
       editor: null,
       builtinFonts: [
-        { label: '衬线', value: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"},
+        { label: '衬线', value: "Avenir, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"},
         { label: '无衬线', value: "Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif"}
       ],
-      currentFont: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
+      currentFont: "Avenir, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
       currentSize: '16px',
       sizeOption: [
         { label: '16px', value: '16px', desc: '默认' },
         { label: '17px', value: '17px', desc: '正常' },
         { label: '18px', value: '18px', desc: '稍大' }
       ],
-      currentTheme: 'default',
+      currentTheme: 'spncr',
       themeOption: [
+        { label: 'spncr', value: 'spncr', author: 'spncr'},
         { label: 'default', value: 'default', author: 'Lyric'},
-        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'}
+        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'},
       ],
       styleThemes: {
+        spncr: spncrTheme,
         default: defaultTheme,
         lupeng: lupengTheme
       },
@@ -50,7 +52,7 @@ var app = new Vue({
     })
     // this.currentFont = this.builtinFonts[0],
     this.wxRenderer = new WxRenderer({
-      theme: this.styleThemes.default,
+      theme: this.styleThemes.spncr,
       fonts: this.currentFont,
       size: this.currentSize
     })
@@ -98,11 +100,11 @@ var app = new Vue({
     copy: function () {
       var clipboardDiv = document.getElementById('output')
       clipboardDiv.focus();
-      window.getSelection().removeAllRanges();  
-      var range = document.createRange(); 
+      window.getSelection().removeAllRanges();
+      var range = document.createRange();
       range.setStartBefore(clipboardDiv.firstChild);
       range.setEndAfter(clipboardDiv.lastChild);
-      window.getSelection().addRange(range);  
+      window.getSelection().addRange(range);
 
       try {
         if (document.execCommand('copy')) {
