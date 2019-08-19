@@ -14,10 +14,10 @@ var app = new Vue({
       currentEditorTheme: 'base16-light',
       editor: null,
       builtinFonts: [
-        { label: '衬线', value: "Avenir, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"},
-        { label: '无衬线', value: "Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif"}
+        { label: '无衬线', value: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif"},
+        { label: '衬线', value: "'Noto Serif CJK SC', PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"}
       ],
-      currentFont: "Avenir, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
+      currentFont: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif",
       currentSize: '16px',
       sizeOption: [
         { label: '16px', value: '16px', desc: '默认' },
