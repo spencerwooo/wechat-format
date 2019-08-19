@@ -2,7 +2,7 @@ var spncrTheme = {
   BASE: {
     'text-align': 'left',
     'color': '#3f3f3f',
-    'line-height': '1.5'
+    'line-height': '2.0'
   },
   BASE_BLOCK: {
     'margin': '20px 10px'
