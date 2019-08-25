@@ -1,5 +1,5 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-a { text-decoration: none; color: #AA1E31 }
+a { text-decoration: none; color: #c986b2 }
 input, button, textarea { font-family: inherit; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 em { font-style: normal !important; }
@@ -90,7 +90,7 @@ section {
 }
 .code-snippet__fix {
   word-wrap: break-word !important;
-  ont-size: 14px;
+  font-size: 14px;
   margin: 10px 0;
   display: block;
   color: #333;

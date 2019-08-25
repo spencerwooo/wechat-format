@@ -1,8 +1,3 @@
-使用时，你得把默认的 Markdown 内容换成你自己的内容。
-
-关于本工具的介绍请看[这篇公众号文章](https://mp.weixin.qq.com/s/pn0LzyfgUj6rGUfVHUksjg)。
-
-
 ## 一级标题
 
 这是一级标题

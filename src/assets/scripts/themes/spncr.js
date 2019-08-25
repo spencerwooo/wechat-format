@@ -28,8 +28,8 @@ var spncrTheme = {
     blockquote: {
       'color': 'rgb(91, 91, 91)',
       'padding': '0 0 0 10px',
-      'background': 'rgba(170, 29, 49, 0.1)',
-      'border-left': '3px solid #AA1E31',
+      'background': 'rgba(201, 134, 178, 0.2)',
+      'border-left': '3px solid #c986b2',
     },
     code: {
       'font-size': '80%',
@@ -76,16 +76,16 @@ var spncrTheme = {
     codespan: {
       'font-size': '90%',
       // 'font-family': FONT_FAMILY_MONO,
-      'color': '#AA1E31',
-      'background': 'rgba(170, 29, 49, 0.1)',
+      'color': '#c986b2',
+      'background': 'rgba(201, 134, 178, 0.2)',
       'padding': '3px 5px',
       'border-radius': '2px',
     },
     link: {
-      'color': '#AA1E31'
+      'color': '#c986b2'
     },
     strong: {
-      'color': '#AA1E31'
+      'color': '#c986b2'
     },
     table: {
       'border-collapse': 'collapse',

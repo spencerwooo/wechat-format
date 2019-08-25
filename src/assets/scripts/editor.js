@@ -14,25 +14,25 @@ var app = new Vue({
       currentEditorTheme: 'base16-light',
       editor: null,
       builtinFonts: [
-        { label: '无衬线', value: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif"},
-        { label: '衬线', value: "'Noto Serif CJK SC', PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"}
+        { label: '无衬线', value: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC, PingFangTC, 'Open Sans', 'Helvetica Neue', sans-serif"},
+        { label: '衬线', value: "'Noto Serif CJK SC', PingFangSC, PingFangTC, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"}
       ],
-      currentFont: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif",
-      currentSize: '16px',
+      currentFont: "Avenir, Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC, PingFangTC, 'Open Sans', 'Helvetica Neue', sans-serif",
+      currentSize: '15px',
       sizeOption: [
-        { label: '16px', value: '16px', desc: '默认' },
-        { label: '17px', value: '17px', desc: '正常' },
-        { label: '18px', value: '18px', desc: '稍大' }
+        { label: '15px', value: '15px', desc: '默认' },
+        { label: '16px', value: '16px', desc: '正常' },
+        { label: '17px', value: '17px', desc: '稍大' }
       ],
       currentTheme: 'spncr',
       themeOption: [
         { label: 'spncr', value: 'spncr', author: 'spncr'},
-        { label: 'default', value: 'default', author: 'Lyric'},
+        { label: 'lyric', value: 'lyric', author: 'Lyric'},
         { label: 'lupeng', value: 'lupeng', author: '鲁鹏'},
       ],
       styleThemes: {
         spncr: spncrTheme,
-        default: defaultTheme,
+        lyric: defaultTheme,
         lupeng: lupengTheme
       },
       aboutDialogVisible: false
